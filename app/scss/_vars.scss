@@ -1,0 +1,81 @@
+$default: #243f4d;
+$title: #333;
+$accent: #715fc0;
+
+%candara-400{
+  font-family: 'Candara', sans-serif;
+  font-weight: 400;
+}
+
+%centurygothic-400{
+  font-family: 'CenturyGothic', sans-serif;
+  font-weight: 400;
+}
+
+%centurygothic-700{
+  font-family: 'CenturyGothic-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%europeext-400{
+  font-family: 'EuropeExt', sans-serif;
+  font-weight: 400;
+}
+
+%helveticaneuecyr-300{
+  font-family: 'HelveticaNeueCyr-Light', sans-serif;
+  font-weight: 300;
+}
+
+%helveticaneuecyritalic-300{
+  font-family: 'HelveticaNeueCyr-LightItalic', sans-serif;
+  font-weight: 300;
+}
+
+%helveticaneuecyr-500{
+  font-family: 'HelveticaNeueCyr-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%montserrat-700{
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%myriadpro-700{
+  font-family: 'MyriadPro-Bold', sans-serif;
+  font-weight: 700;
+}
+
+
+
+%checkbox-hidden{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@function max($numbers...) {
+ @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+ @return m#{i}n(#{$numbers});
+}

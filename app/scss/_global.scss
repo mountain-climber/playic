@@ -1,0 +1,61 @@
+html,
+body {
+	height: 100%;
+}
+
+body{
+  font-size: 16px;
+  line-height: 22px;
+  @extend %centurygothic-400;
+  color: $default;
+  overflow-x: hidden;
+  min-width: 300px;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.container{
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-fluid{
+  max-width: 1920px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.title{
+  font-size: 30px;
+  line-height: 45px;
+  @extend %centurygothic-700;
+  color: $title;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 22px;
+  margin-bottom: 32px;
+  &::after{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: $accent;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}

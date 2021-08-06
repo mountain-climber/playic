@@ -1,0 +1,89 @@
+@font-face{
+  font-family: 'Candara';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Candara'),
+       url('../fonts/Candara.woff2') format('woff2'),
+       url('../fonts/Candara.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'CenturyGothic';
+  font-weight: 400;
+  font-style: normal;
+  src: local('CenturyGothic'),
+       url('../fonts/CenturyGothic.woff2') format('woff2'),
+       url('../fonts/CenturyGothic.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'CenturyGothic-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: local('CenturyGothic-Bold'),
+       url('../fonts/CenturyGothic-Bold.woff2') format('woff2'),
+       url('../fonts/CenturyGothic-Bold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'EuropeExt';
+  font-weight: 400;
+  font-style: normal;
+  src: local('EuropeExt'),
+       url('../fonts/EuropeExt.woff2') format('woff2'),
+       url('../fonts/EuropeExt.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'HelveticaNeueCyr-Light';
+  font-weight: 300;
+  font-style: normal;
+  src: local('HelveticaNeueCyr-Light'),
+       url('../fonts/HelveticaNeueCyr-Light.woff2') format('woff2'),
+       url('../fonts/HelveticaNeueCyr-Light.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'HelveticaNeueCyr-LightItalic';
+  font-weight: 300;
+  font-style: italic;
+  src: local('HelveticaNeueCyr-LightItalic'),
+       url('../fonts/HelveticaNeueCyr-LightItalic.woff2') format('woff2'),
+       url('../fonts/HelveticaNeueCyr-LightItalic.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'HelveticaNeueCyr-Medium';
+  font-weight: 500;
+  font-style: normal;
+  src: local('HelveticaNeueCyr-Medium'),
+       url('../fonts/HelveticaNeueCyr-Medium.woff2') format('woff2'),
+       url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'Montserrat-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: local('Montserrat-Bold'),
+       url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+       url('../fonts/Montserrat-Bold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'MyriadPro-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: local('MyriadPro-Bold'),
+       url('../fonts/MyriadPro-Bold.woff2') format('woff2'),
+       url('../fonts/MyriadPro-Bold.woff') format('woff');
+  font-display: swap;
+}
