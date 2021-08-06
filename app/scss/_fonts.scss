@@ -1,89 +1,39 @@
 @font-face{
-  font-family: 'Candara';
+  font-family: 'Forum';
   font-weight: 400;
   font-style: normal;
-  src: local('Candara'),
-       url('../fonts/Candara.woff2') format('woff2'),
-       url('../fonts/Candara.woff') format('woff');
+  src: local('Forum'),
+       url('../fonts/Forum.woff2') format('woff2'),
+       url('../fonts/Forum.woff') format('woff');
   font-display: swap;
 }
 
 @font-face{
-  font-family: 'CenturyGothic';
+  font-family: 'Montserrat';
   font-weight: 400;
   font-style: normal;
-  src: local('CenturyGothic'),
-       url('../fonts/CenturyGothic.woff2') format('woff2'),
-       url('../fonts/CenturyGothic.woff') format('woff');
+  src: local('Montserrat'),
+       url('../fonts/Montserrat.woff2') format('woff2'),
+       url('../fonts/Montserrat.woff') format('woff');
   font-display: swap;
 }
 
 @font-face{
-  font-family: 'CenturyGothic-Bold';
-  font-weight: 700;
-  font-style: normal;
-  src: local('CenturyGothic-Bold'),
-       url('../fonts/CenturyGothic-Bold.woff2') format('woff2'),
-       url('../fonts/CenturyGothic-Bold.woff') format('woff');
-  font-display: swap;
-}
-
-@font-face{
-  font-family: 'EuropeExt';
-  font-weight: 400;
-  font-style: normal;
-  src: local('EuropeExt'),
-       url('../fonts/EuropeExt.woff2') format('woff2'),
-       url('../fonts/EuropeExt.woff') format('woff');
-  font-display: swap;
-}
-
-@font-face{
-  font-family: 'HelveticaNeueCyr-Light';
-  font-weight: 300;
-  font-style: normal;
-  src: local('HelveticaNeueCyr-Light'),
-       url('../fonts/HelveticaNeueCyr-Light.woff2') format('woff2'),
-       url('../fonts/HelveticaNeueCyr-Light.woff') format('woff');
-  font-display: swap;
-}
-
-@font-face{
-  font-family: 'HelveticaNeueCyr-LightItalic';
-  font-weight: 300;
-  font-style: italic;
-  src: local('HelveticaNeueCyr-LightItalic'),
-       url('../fonts/HelveticaNeueCyr-LightItalic.woff2') format('woff2'),
-       url('../fonts/HelveticaNeueCyr-LightItalic.woff') format('woff');
-  font-display: swap;
-}
-
-@font-face{
-  font-family: 'HelveticaNeueCyr-Medium';
+  font-family: 'Montserrat-Medium';
   font-weight: 500;
   font-style: normal;
-  src: local('HelveticaNeueCyr-Medium'),
-       url('../fonts/HelveticaNeueCyr-Medium.woff2') format('woff2'),
-       url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff');
+  src: local('Montserrat-Medium'),
+       url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+       url('../fonts/Montserrat-Medium.woff') format('woff');
   font-display: swap;
 }
 
 @font-face{
-  font-family: 'Montserrat-Bold';
-  font-weight: 700;
+  font-family: 'Raleway-Medium';
+  font-weight: 500;
   font-style: normal;
-  src: local('Montserrat-Bold'),
-       url('../fonts/Montserrat-Bold.woff2') format('woff2'),
-       url('../fonts/Montserrat-Bold.woff') format('woff');
-  font-display: swap;
-}
-
-@font-face{
-  font-family: 'MyriadPro-Bold';
-  font-weight: 700;
-  font-style: normal;
-  src: local('MyriadPro-Bold'),
-       url('../fonts/MyriadPro-Bold.woff2') format('woff2'),
-       url('../fonts/MyriadPro-Bold.woff') format('woff');
+  src: local('Raleway-Medium'),
+       url('../fonts/Raleway-Medium.woff2') format('woff2'),
+       url('../fonts/Raleway-Medium.woff') format('woff');
   font-display: swap;
 }

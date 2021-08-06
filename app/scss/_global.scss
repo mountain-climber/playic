@@ -5,11 +5,11 @@ body {
 
 body{
   font-size: 16px;
-  line-height: 22px;
-  @extend %centurygothic-400;
+  line-height: 20px;
+  @extend %montserrat-400;
   color: $default;
-  overflow-x: hidden;
-  min-width: 300px;
+  // overflow-x: hidden;
+  // min-width: 300px;
 }
 
 .wrapper {
@@ -26,7 +26,7 @@ body{
 }
 
 .container{
-  max-width: 1230px;
+  max-width: 1210px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -39,23 +39,8 @@ body{
 
 .title{
   font-size: 30px;
-  line-height: 45px;
-  @extend %centurygothic-700;
-  color: $title;
-  text-align: center;
+  line-height: 33px;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  position: relative;
-  padding-bottom: 22px;
-  margin-bottom: 32px;
-  &::after{
-    content: '';
-    position: absolute;
-    width: 60px;
-    height: 3px;
-    background-color: $accent;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-  }
+  @extend %forum-400;
 }
