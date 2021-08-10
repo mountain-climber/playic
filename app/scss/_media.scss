@@ -1,0 +1,41 @@
+@media(max-width: 1220px){
+  .header{
+    &__content{
+      height: 550px;
+    }
+    &__title{
+      font-size: 50px;
+      line-height: 56px;
+    }
+    &__img{
+      width: 750px;
+    }
+    &::after{
+      height: 140px;
+    }
+  }
+  .footer{
+    &__list{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media(max-width: 1050px){
+  .header{
+    &__content{
+      height: 550px;
+    }
+    &__title{
+      font-size: 50px;
+      line-height: 56px;
+    }
+    &__img{
+      width: 750px;
+    }
+    &::after{
+      height: 140px;
+    }
+  }
+}

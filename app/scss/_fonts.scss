@@ -37,3 +37,13 @@
        url('../fonts/Raleway-Medium.woff') format('woff');
   font-display: swap;
 }
+
+@font-face{
+  font-family: 'Raleway-SemiBold';
+  font-weight: 600;
+  font-style: normal;
+  src: local('Raleway-SemiBold'),
+       url('../fonts/Raleway-SemiBold.woff2') format('woff2'),
+       url('../fonts/Raleway-SemiBoldm.woff') format('woff');
+  font-display: swap;
+}
