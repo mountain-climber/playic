@@ -11,10 +11,14 @@
   &::after{
     content: '';
     position: absolute;
-    width: 100%;
+    left: 0;
+    right: 0;
     height: 168px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #EBF0F2 100%);
     bottom: 0;
+  }
+  &__btn{
+    display: none;
   }
   &__img{
     position: absolute;
@@ -51,6 +55,7 @@
     width: 180px;
     padding: 14px 0;
     text-align: center;
+    display: block;
   }
 }
 
