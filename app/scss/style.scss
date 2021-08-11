@@ -82,7 +82,8 @@
     justify-content: space-between;
   }
   &__item{
-    width: 370px;
+    max-width: 350px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,13 +93,18 @@
       position: absolute;
       width: 116px;
       height: 108px;
-      left: 56px;
+      left: 44px;
       top: 8px;
       background-image: url('../images/about/spiral.svg');
       z-index: -1;
     }
     &:first-child{
       padding-top: 30px;
+    }
+    &:nth-child(2){
+      .about__item-img{
+        margin-bottom: 8px;
+      }
     }
   }
   &__item-img{
@@ -113,12 +119,13 @@
 
 .users{
   background-color: #FBFDFE;
-  padding-top: 50px;
+  padding: 50px 0;
   position: relative;
   &::after{
     content: '';
     position: absolute;
-    width: 100%;
+    left: 0;
+    right: 0;
     height: 110px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #EBF0F2 100%);
     bottom: 0;
@@ -137,7 +144,7 @@
   &__content{
     width: 500px;
     margin-left: auto;
-    padding: 100px 0;
+    padding: 100px 0 50px;
   }
   &__content-title{
     font-size: 27px;
@@ -174,6 +181,7 @@
     margin-right: 15px;
   }
   &__text{
+    max-width: 236px;
     font-size: 18px;
     line-height: 22px;
     @extend %montserrat-500;
@@ -181,7 +189,7 @@
 }
 
 .rhythm{
-  padding: 120px 0 125px;
+  padding: 120px 0;
   background-color: #F9FBFB;
   position: relative;
   &__title{
@@ -191,10 +199,11 @@
     margin-bottom: 50px;
   }
   &__list-item{
-    margin-bottom: 45px;
+    margin-bottom: 30px;
     color: $dark;
     font-size: 20px;
     line-height: 24px;
+    padding: 8px 0;
     padding-left: 60px;
     position: relative;
     &::before{
@@ -203,7 +212,8 @@
       width: 40px;
       height: 40px;
       left: 0;
-      top: -8px;
+      top: 50%;
+      transform: translateY(-50%);
     }
     &:last-child{
       margin-bottom: 0;
@@ -227,7 +237,7 @@
 }
 
 .improve{
-  padding: 105px 0 100px;
+  padding: 100px 0;
   &__title{
     margin-bottom: 50px;
   }
@@ -238,6 +248,7 @@
   }
   &__item{
     max-width: 310px;
+    width: 100%;
     font-size: 18px;
     line-height: 22px;
     padding-left: 40px;
@@ -252,6 +263,9 @@
       border-radius: 50%;
       left: 0;
       top: 1px;
+    }
+    &:nth-child(even){
+      margin-left: auto;
     }
     span{
       display: block;
@@ -268,7 +282,8 @@
   &::after{
     content: '';
     position: absolute;
-    width: 100%;
+    left: 0;
+    right: 0;
     height: 154px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #EBF0F2 100%);
     bottom: 0;

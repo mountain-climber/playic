@@ -1,3 +1,16 @@
+@media(max-width: 1366px){
+  .rhythm{
+    padding: 80px 0;
+    &__title{
+      font-size: 30px;
+      line-height: 33px;
+    }
+    &__img{
+      width: 650px;
+    }
+  }
+}
+
 @media(max-width: 1220px){
   .header{
     &__content{
@@ -25,9 +38,21 @@
       width: 460px;
     }
   }
+  .functional{
+    &__items{
+      // padding: 0;
+      // display: block;
+      // column-count: 2;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px 100px;
+    }
+    &__item{
+      // margin-bottom: 20px;
+    }
+  }
 }
 
-@media(max-width: 1050px){
+@media(max-width: 1100px){
   .header{
     &__content{
       height: 426px;
@@ -43,6 +68,28 @@
       height: 116px;
     }
   }
+  .about{
+    &__items{
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    &__item{
+      margin-bottom: 30px;
+    }
+  }
+  .users{
+    &__img{
+      width: 600px;
+    }
+    &__content{
+      padding: 70px 0 20px;
+    }
+  }
+  .rhythm{
+    &__img{
+      width: 500px;
+    }
+  }
 }
 
 @media(max-width: 992px){
@@ -54,6 +101,45 @@
   .menu{
     &__list-item{
       margin-right: 30px;
+    }
+  }
+  .users{
+    &::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 50px;
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #EBF0F2 100%);
+      top: 0;
+  }
+    &::after{
+      height: 50px;
+    }
+    &__img{
+      display: none;
+    }
+    &__title{
+      display: none;
+    }
+    &__content{
+      width: 100%;
+      margin: 0 auto;
+      padding: 50px 0;
+      text-align: center;
+    }
+    &__content-title{
+      font-size: 30px;
+      line-height: 33px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      font-family: 'Forum', serif;
+    }
+  }
+  .rhythm{
+    &__img{
+      display: none;
     }
   }
 }
@@ -114,6 +200,26 @@
 }
 
 @media(max-width: 768px){
+  .about{
+    &__items{
+      display: block;
+    }
+    &__item{
+      margin: 0 auto 25px;
+      &:nth-child(2){
+        margin-bottom: 40px;
+      }
+    }
+  }
+  .improve{
+    &__items{
+      display: block;
+    }
+    &__item{
+      display: block;
+      margin: 0 auto 30px;
+    }
+  }
 }
 
 @media(max-width: 620px){
@@ -121,6 +227,14 @@
     &__title{
       font-size: 44px;
       line-height: 44px;
+    }
+  }
+}
+
+@media(max-width: 540px){
+  .rhythm{
+    &__list-item{
+      margin-bottom: 15px;
     }
   }
 }
@@ -136,6 +250,13 @@
     }
     &__link{
       margin-bottom: 40px;
+    }
+  }
+  .about{
+    &__item{
+      &::before{
+        display: none;
+      }
     }
   }
 }
