@@ -9,6 +9,15 @@
       width: 650px;
     }
   }
+  .easy{
+    padding: 120px 0;
+    &::after{
+      height: 134px;
+    }
+    &__img{
+      width: 720px;
+    }
+  }
 }
 
 @media(max-width: 1220px){
@@ -32,22 +41,23 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
     }
+    &__list-item{
+      margin-right: 0;
+      margin-bottom: 15px;
+      &:nth-child(even){
+        margin-left: auto;
+      }
+    }
   }
   .users{
     &__content{
-      width: 460px;
+      max-width: 460px;
     }
   }
   .functional{
     &__items{
-      // padding: 0;
-      // display: block;
-      // column-count: 2;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 20px 100px;
-    }
-    &__item{
-      // margin-bottom: 20px;
     }
   }
 }
@@ -56,10 +66,6 @@
   .header{
     &__content{
       height: 426px;
-    }
-    &__title{
-      font-size: 50px;
-      line-height: 56px;
     }
     &__img{
       width: 600px;
@@ -75,9 +81,15 @@
     }
     &__item{
       margin-bottom: 30px;
+      &:last-child{
+        margin-bottom: 0;
+      }
     }
   }
   .users{
+    &::after{
+      height: 90px;
+    }
     &__img{
       width: 600px;
     }
@@ -88,6 +100,15 @@
   .rhythm{
     &__img{
       width: 500px;
+    }
+  }
+  .easy{
+    padding: 88px 0;
+    &::after{
+      height: 116px;
+    }
+    &__img{
+      width: 620px;
     }
   }
 }
@@ -112,7 +133,7 @@
       height: 50px;
       background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #EBF0F2 100%);
       top: 0;
-  }
+    }
     &::after{
       height: 50px;
     }
@@ -123,7 +144,6 @@
       display: none;
     }
     &__content{
-      width: 100%;
       margin: 0 auto;
       padding: 50px 0;
       text-align: center;
@@ -142,6 +162,14 @@
       display: none;
     }
   }
+  .easy{
+    &::after{
+      display: none;
+    }
+    &__img{
+      display: none;
+    }
+  }
 }
 
 @media(max-width: 892px){
@@ -153,6 +181,7 @@
     }
     &__content{
       padding: 70px 0 125px;
+      height: auto;
     }
     &__link{
       margin: 0 auto auto;
@@ -197,6 +226,11 @@
       color: $dark;
     }
   }
+  .functional{
+    &__items{
+      padding: 0 20px;
+    }
+  }
 }
 
 @media(max-width: 768px){
@@ -206,9 +240,20 @@
     }
     &__item{
       margin: 0 auto 25px;
+      &:first-child{
+        padding: 0;
+      }
       &:nth-child(2){
         margin-bottom: 40px;
       }
+    }
+  }
+  .functional{
+    &__items{
+      display: block;
+    }
+    &__item{
+      margin: 0 auto;
     }
   }
   .improve{
@@ -223,10 +268,74 @@
 }
 
 @media(max-width: 620px){
+  .about,
+  .users__content,
+  .functional,
+  .rhythm,
+  .improve,
+  .easy{
+    padding: 60px 0;
+  }
   .header{
     &__title{
       font-size: 44px;
       line-height: 44px;
+      margin-bottom: 8px;
+    }
+    &__content{
+      padding: 45px 0 100px;
+    }
+  }
+  .footer{
+    &__list{
+      display: block;
+    }
+    &__list-item{
+      text-align: center;
+      margin-bottom: 15px;
+      &:nth-child(even){
+        margin-left: 0;
+      }
+    }
+  }
+  .about{
+    &__title{
+      margin-bottom: 40px;
+    }
+  }
+  .users{
+    padding: 0;
+  }
+  .functional{
+    &__num{
+      font-size: 75px;
+      line-height: 80px;
+    }
+  }
+  .rhythm{
+    &__title{
+      text-align: center;
+    }
+  }
+  .improve{
+    &__item{
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+  .easy{
+    text-align: center;
+    &__title{
+      font-size: 45px;
+      line-height: 45px;
+      margin-bottom: 8px;
+    }
+    &__subtitle{
+      margin-bottom: 25px;
+    }
+    &__link{
+      margin: 0 auto;
     }
   }
 }
@@ -240,9 +349,18 @@
 }
 
 @media (max-width: 450px){
+  .title,
+  .users__content-title{
+    font-size: 27px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
   .header{
     &::after{
       display: none;
+    }
+    &__subtitle{
+      margin-bottom: 25px;
     }
     &__content{
       height: 330px;
@@ -257,6 +375,20 @@
       &::before{
         display: none;
       }
+    }
+  }
+  .functional{
+    &__item{
+      margin-bottom: 15px;
+    }
+    &__num{
+      font-size: 44px;
+      line-height: 44px;
+    }
+  }
+  .improve{
+    &__item{
+      margin: 0 auto 15px;
     }
   }
 }
