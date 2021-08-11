@@ -25,29 +25,3 @@ $dark: #323F59;
   font-family: 'Raleway-SemiBold', sans-serif;
   font-weight: 600;
 }
-
-
-
-
-%checkbox-hidden{
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  position: absolute;
-}
-
-
-
-
-
-
-
-
-
-@function max($numbers...) {
- @return m#{a}x(#{$numbers});
-}
-@function min($numbers...) {
- @return m#{i}n(#{$numbers});
-}
