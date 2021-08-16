@@ -13,24 +13,24 @@
     <header class="header">
       <div class="container">
         <button class="header__btn">
-          <img class="menu__btn-img" src="images/header/menu-btn.svg" alt="menu icon">
+          <img class="header__btn-img" src="images/header/header-btn.svg" alt="menu icon">
         </button>
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Наши пользователи</a>
+              <a class="menu__list-link" href="#users">Наши пользователи</a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Функционал</a>
+              <a class="menu__list-link" href="#functional">Функционал</a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Бинауральные ритмы</a>
+              <a class="menu__list-link" href="#rhythm">Бинауральные ритмы</a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Качество звучания</a>
+              <a class="menu__list-link" href="#quality">Качество звучания</a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Easy to hear</a>
+              <a class="menu__list-link" href="#easy">Easy to hear</a>
             </li>
           </ul>
         </nav>
@@ -73,21 +73,19 @@
           </div>
         </div>
       </section>
-      <section class="users">
+      <section class="users" id="users">
         <div class="container">
           <h3 class="users__title title">Наши пользователи</h3>
-          <div class="users__inner">
-            <img class="users__img" src="images/users/decor.png" alt="images">
-            <div class="users__content">
-              <p class="users__content-title">Для меломанов</p>
-              <p class="users__content-text">
-                Эквалайзер, усилитель и персонализация звука для прослушивании музыки в новом, уникальном, звучании.
-              </p>
-            </div>
+          <img class="users__img" src="images/users/decor.png" alt="images">
+          <div class="users__content">
+            <p class="users__content-title">Для меломанов</p>
+            <p class="users__content-text">
+              Эквалайзер, усилитель и персонализация звука для прослушивании музыки в новом, уникальном, звучании.
+            </p>
           </div>
         </div>
       </section>
-      <section class="functional">
+      <section class="functional" id="functional">
         <div class="container">
           <h3 class="functional__title title">Функционал приложения</h3>
           <div class="functional__items">
@@ -132,43 +130,47 @@
           </div>
         </div>
       </section>
-      <section class="rhythm">
+      <section class="rhythm" id="rhythm">
         <div class="container">
-          <h3 class="rhythm__title title">Поддержка бинауральных ритмов</h3>
-          <ul class="rhythm__list">
-            <li class="rhythm__list-item rhythm__list-item--performance">Ритмы для продуктивности</li>
-            <li class="rhythm__list-item rhythm__list-item--fun">Ритмы для позитивного настроения</li>
-            <li class="rhythm__list-item rhythm__list-item--serenity">Ритмы для спокойствия</li>
-          </ul>
+          <div class="rhythm__content">
+            <h3 class="rhythm__title title">Поддержка бинауральных ритмов</h3>
+            <ul class="rhythm__list">
+              <li class="rhythm__list-item rhythm__list-item--performance">Ритмы для продуктивности</li>
+              <li class="rhythm__list-item rhythm__list-item--fun">Ритмы для позитивного настроения</li>
+              <li class="rhythm__list-item rhythm__list-item--serenity">Ритмы для спокойствия</li>
+            </ul>
+          </div>
         </div>
         <img class="rhythm__img" src="images/rhythm/decor.png" alt="images">
       </section>
-      <section class="improve">
+      <section class="quality" id="quality">
         <div class="container">
-          <h3 class="improve__title title">Улучшите качество звучания музыки</h3>
-          <div class="improve__items">
-            <div class="improve__item">
+          <h3 class="quality__title title">Улучшите качество звучания музыки</h3>
+          <div class="quality__items">
+            <div class="quality__item">
               С помощью эквалайзера
             </div>
-            <div class="improve__item">
+            <div class="quality__item">
               С усилением Volume Boost
             </div>
-            <div class="improve__item">
+            <div class="quality__item">
               С адаптацией музыки
               <span>под ваш слуховой профиль</span>
             </div>
-            <div class="improve__item">
+            <div class="quality__item">
               С подавлением
               <span>посторонних шумов</span>
             </div>
           </div>
         </div>
       </section>
-      <section class="easy">
+      <section class="easy" id="easy">
         <div class="container">
-          <h2 class="easy__title">Easy To Hear</h2>
-          <h4 class="easy__subtitle">Раскроет звучание музыки по-новому</h4>
-          <a class="easy__link" href="#">Попробовать</a>
+          <div class="easy__content">
+            <h2 class="easy__title">Easy To Hear</h2>
+            <h4 class="easy__subtitle">Раскроет звучание музыки по-новому</h4>
+            <a class="easy__link" href="#">Попробовать</a>
+          </div>
         </div>
         <img class="easy__img" src="images/easy/decor.png" alt="images">
       </section>

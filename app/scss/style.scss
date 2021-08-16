@@ -5,8 +5,8 @@
 @import 'global';
 
 .header{
+  padding-top: 70px;
   background-color: #F9FBFB;
-  padding-top: 50px;
   position: relative;
   &::after{
     content: '';
@@ -26,6 +26,8 @@
     right: 0;
   }
   &__content{
+    position: relative;
+    z-index: 1;
     height: 642px;
     display: flex;
     flex-direction: column;
@@ -40,6 +42,7 @@
     margin-top: auto;
   }
   &__subtitle{
+    @extend %montserrat-400;
     font-size: 22px;
     line-height: 27px;
     margin-bottom: 40px;
@@ -60,19 +63,36 @@
 }
 
 .menu{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 25px;
+  z-index: 100;
+  padding: 25px 0;
+  height: 250px;
+  transition: all .5s;
+  &.menu--scroll{
+    background-color: $main;
+    height: 70px;
+    top: 0;
+    .menu__list-link{
+      color: #fff;
+    }
+  }
   &__list{
     display: flex;
     justify-content: center;
   }
   &__list-item{
     margin-right: 50px;
+    color: $main;
     &:last-child{
       margin-right: 0;
     }
   }
 }
 
-.about{
+.about{ 
   padding: 100px 0 80px;
   &__title{
     margin-bottom: 80px;
@@ -130,15 +150,18 @@
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #EBF0F2 100%);
     bottom: 0;
   }
-  &__inner{
-    position: relative;
-  }
   &__img{
     position: absolute;
     left: 0;
-    top: -64px;
+    top: 20px;
+  }
+  &__title{
+    z-index: 1;
+    position: relative;
   }
   &__content{
+    position: relative;
+    z-index: 1;
     max-width: 500px;
     margin-left: auto;
     padding: 100px 0 50px;
@@ -189,6 +212,10 @@
   padding: 120px 0;
   background-color: #F9FBFB;
   position: relative;
+  &__content{
+    position: relative;
+    z-index: 1;
+  }
   &__title{
     font-size: 35px;
     line-height: 39px;
@@ -233,7 +260,7 @@
   }
 }
 
-.improve{
+.quality{
   padding: 100px 0;
   &__title{
     margin-bottom: 50px;
@@ -286,6 +313,10 @@
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #EBF0F2 100%);
     bottom: 0;
   }
+  &__content{
+    position: relative;
+    z-index: 1;
+  }
   &__title{
     font-size: 50px;
     line-height: 55px;
@@ -294,6 +325,7 @@
     margin-bottom: 15px;
   }
   &__subtitle{
+    @extend %montserrat-400;
     font-size: 22px;
     line-height: 27px;
     margin-bottom: 40px;
@@ -322,6 +354,8 @@
   color: #fff;
   background: linear-gradient(90.73deg, #BF3F6E 0.11%, #DD7FAB 100%);
   &__list{
+    position: relative;
+    z-index: 1;
     margin-bottom: 35px;
     display: flex;
     justify-content: space-between;
