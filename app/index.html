@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Volume Music Player – усильте звучание музыки в 1000 раз!</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body id="body">
   <div class="wrapper">
     <header class="header">
       <div class="container">
-        <button class="header__btn">
-          <img class="header__btn-img" src="images/header/header-btn.svg" alt="menu icon">
-        </button>
+        <div class="header__btn-wrap">
+          <button class="header__btn">
+            <span class="header__btn-line"></span>
+          </button>
+        </div>
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__list-item">
@@ -44,7 +47,7 @@
           <a class="header__link" href="#">Скачать</a>
         </div>
       </div>
-      <img class="header__img" src="images/header/decor.png" alt="images">
+      <img class="header__img" src="images/header/decor.png" alt="Девушка в наушниках">
     </header>
     <main class="main">
       <section class="about">
@@ -52,20 +55,20 @@
           <h3 class="about__title title">Почему мы?</h3>
           <div class="about__items">
             <div class="about__item">
-              <img class="about__item-img" src="images/about/equalizer.svg" alt="images">
+              <img class="about__item-img" src="images/about/equalizer.svg" alt="Эквалайзер">
               <p class="about__item-text">
                 Усиление и эквалайзер
                 для музыки из любого источника
               </p>
             </div>
             <div class="about__item">
-              <img class="about__item-img" src="images/about/player.svg" alt="images">
+              <img class="about__item-img" src="images/about/player.svg" alt="Плеер">
               <p class="about__item-text">
                 Кастомные и предустановленные пресеты для нового звучания
               </p>
             </div>
             <div class="about__item">
-              <img class="about__item-img" src="images/about/headphones.svg" alt="images">
+              <img class="about__item-img" src="images/about/headphones.svg" alt="Наушники">
               <p class="about__item-text">
                 Персонализация звука под ваш слух
               </p>
@@ -76,7 +79,7 @@
       <section class="users" id="users">
         <div class="container">
           <h3 class="users__title title">Наши пользователи</h3>
-          <img class="users__img" src="images/users/decor.png" alt="images">
+          <img class="lazyload users__img" data-src="images/users/decor.png" alt="Девушка в наушниках">
           <div class="users__content">
             <p class="users__content-title">Для меломанов</p>
             <p class="users__content-text">
@@ -141,7 +144,7 @@
             </ul>
           </div>
         </div>
-        <img class="rhythm__img" src="images/rhythm/decor.png" alt="images">
+        <img class="lazyload rhythm__img" data-src="images/rhythm/decor.png" alt="Наушники">
       </section>
       <section class="quality" id="quality">
         <div class="container">
@@ -172,23 +175,23 @@
             <a class="easy__link" href="#">Попробовать</a>
           </div>
         </div>
-        <img class="easy__img" src="images/easy/decor.png" alt="images">
+        <img class="lazyload easy__img" data-src="images/easy/decor.png" alt="Девушка в наушниках">
       </section>
     </main>
     <footer class="footer">
       <div class="container">
         <ul class="footer__list">
           <li class="footer__list-item">
-            <a class="footer__list-linkk" href="#">Условия использования</a>
+            <a class="footer__list-link" href="#">Условия использования</a>
           </li>
           <li class="footer__list-item">
-            <a class="footer__list-linkk" href="#">Политика конфиденциальности</a>
+            <a class="footer__list-link" href="#">Политика конфиденциальности</a>
           </li>
           <li class="footer__list-item">
-            <a class="footer__list-linkk" href="#">Ограничение ответственности</a>
+            <a class="footer__list-link" href="#">Ограничение ответственности</a>
           </li>
           <li class="footer__list-item">
-            <a class="footer__list-linkk" href="#">Активация программы</a>
+            <a class="footer__list-link" href="#">Активация программы</a>
           </li>
         </ul>
         <a class="footer__email" href="mailto:support@easy2hear.com">Свяжитесь с нами: support@easy2hear.com</a>

@@ -4,6 +4,14 @@
 @import 'libs';
 @import 'global';
 
+img{
+  transition: filter 0.3s;
+}
+
+img.lazyload{
+  filter: blur(8px);
+}
+
 .header{
   padding-top: 70px;
   background-color: #F9FBFB;
@@ -17,13 +25,16 @@
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #EBF0F2 100%);
     bottom: 0;
   }
-  &__btn{
+  &__btn-wrap{
     display: none;
   }
   &__img{
     position: absolute;
     top: 0;
     right: 0;
+    max-width: 863px;
+    max-height: 900px;
+    object-fit: cover;
   }
   &__content{
     position: relative;
@@ -67,7 +78,7 @@
   left: 0;
   right: 0;
   top: 25px;
-  z-index: 100;
+  z-index: 3;
   padding: 25px 0;
   height: 250px;
   transition: all .5s;
@@ -154,6 +165,9 @@
     position: absolute;
     left: 0;
     top: 20px;
+    max-width: 698px;
+    max-height: 496px;
+    object-fit: cover;
   }
   &__title{
     z-index: 1;
@@ -257,6 +271,9 @@
     top: 50%;
     transform: translateY(-50%);
     right: 0;
+    max-width: 790px;
+    max-height: 813px;
+    object-fit: cover;
   }
 }
 
@@ -300,7 +317,7 @@
 
 .easy{
   padding: 150px 0;
-  background-image: url('../images/easy/easy-bg.svg');
+  background-image: url('../images/easy/bg.svg');
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -345,7 +362,10 @@
   &__img{
     position: absolute;
     right: 0;
-    top: -40px;
+    top: -25px;
+    max-width: 754px;
+    max-height: 678px;
+    object-fit: cover;
   }
 }
 
@@ -373,6 +393,7 @@
     display: block;
   }
   &__email{
+    text-align: center;
     font-size: 18px;
     line-height: 21px;
     @extend %raleway-600;
