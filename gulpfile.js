@@ -43,8 +43,8 @@ function images() {
 function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
-    'lazyestload/src/js/lazyload.js',
-    'node_modules/wow.js/dist/wow.js',
+    'lazyestload/dist/js/lazyload.js',
+    'node_modules/joshjs/src/josh.js',
     'app/js/main.js'
   ])
     .pipe(concat('main.min.js'))
@@ -71,7 +71,8 @@ function build() {
     'app/css/style.min.css',
     'app/fonts/**/*',
     'app/js/main.min.js',
-    'app/*.html'
+    'app/*.html',
+    'app/*.*'
   ], { base: 'app' })
     .pipe(dest('dist'))
 }

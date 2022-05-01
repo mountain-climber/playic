@@ -6,212 +6,252 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Volume Music Player – усильте звучание музыки в 1000 раз!</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#bf3f6e">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="msapplication-config" content="/browserconfig.xml">
+  <meta name="theme-color" content="#bf3f6e">
 </head>
 
 <body id="body">
   <div class="wrapper">
+
     <header class="header">
       <div class="container">
         <div class="header__btn-wrap">
-          <button class="header__btn">
-            <span class="header__btn-line"></span>
+          <button class="header__btn" type="button">
+            <span class="header__btn-line" aria-hidden></span>
+            <div class="header__click-counter"></div>
           </button>
         </div>
         <nav class="menu">
           <ul class="menu__list">
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#users">Наши пользователи</a>
+            <li class="menu__item">
+              <a class="menu__link" href="#users">Наши пользователи</a>
             </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#functional">Функционал</a>
+            <li class="menu__item">
+              <a class="menu__link" href="#functional">Функционал</a>
             </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#rhythm">Бинауральные ритмы</a>
+            <li class="menu__item">
+              <a class="menu__link" href="#rhythm">Бинауральные ритмы</a>
             </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#quality">Качество звучания</a>
+            <li class="menu__item">
+              <a class="menu__link" href="#quality">Качество звучания</a>
             </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#easy">Easy to hear</a>
+            <li class="menu__item">
+              <a class="menu__link" href="#easy">Easy to hear</a>
             </li>
           </ul>
         </nav>
         <div class="header__content">
-          <h1 class="header__title wow animate__fadeInLeft">
+          <h1 class="header__title josh-js" data-josh-anim-name="fadeInLeft">
             Volume music player
           </h1>
-          <h4 data-wow-delay=".5s" class="header__subtitle wow animate__fadeInLeft">
+          <p class="header__subtitle josh-js" data-josh-anim-name="fadeInLeft" data-josh-anim-delay="500">
             Усильте звучание музыки в 1000 раз
-          </h4>
-          <a data-wow-delay="1s" class="header__link wow animate__bounceInLeft" href="#">Скачать</a>
+          </p>
+          <a class="header__link josh-js" href="#" data-josh-anim-name="zoomInUp"
+            data-josh-anim-delay="1000">Скачать</a>
         </div>
       </div>
-      <img data-wow-delay="1.6s" class="header__img wow animate__fadeInRight" src="images/header/decor.png"
-        alt="Девушка в наушниках">
+      <img class="header__img josh-js" src="images/header/decor.png" alt="Девушка в наушниках"
+        data-josh-anim-name="fadeInRight" data-josh-anim-delay="1600">
     </header>
+
     <main class="main">
+
       <section class="about">
         <div class="container">
-          <h3 class="about__title title wow animate__fadeInLeft">Почему мы?</h3>
-          <div class="about__items">
-            <div class="about__item">
-              <img data-wow-delay=".5s" class="about__item-decor wow animate__fadeInLeft" src="images/about/spiral.svg"
-                alt="Спираль">
-              <img class="about__item-img wow animate__fadeInLeft"
-                src="images/about/equalizer.svg" alt="Эквалайзер">
-              <p class="about__item-text wow animate__fadeInLeft">
+          <h2 class="about__title title josh-js" data-josh-anim-name="fadeInLeft" data-josh-anim-delay="500">Почему мы?
+          </h2>
+          <ul class="about__items">
+            <li class="about__item">
+              <img class="about__item-decor josh-js" src="images/about/spiral.svg" alt="Спираль"
+                data-josh-anim-name="fadeInLeft" data-josh-anim-delay="800">
+              <img class="about__item-img josh-js" src="images/about/equalizer.svg" alt="Эквалайзер"
+                data-josh-anim-name="fadeInLeft" data-josh-anim-delay="500">
+              <p class="about__item-text josh-js" data-josh-anim-name="fadeInLeft" data-josh-anim-delay="500">
                 Усиление и эквалайзер
                 для музыки из любого источника
               </p>
-            </div>
-            <div class="about__item">
-              <img data-wow-delay=".5s" class="about__item-decor wow animate__fadeInDown" src="images/about/spiral.svg"
-                alt="Спираль">
-              <img class="about__item-img wow animate__fadeInDown" src="images/about/player.svg"
-                alt="Плеер">
-              <p class="about__item-text wow animate__fadeInUp">
+            </li>
+            <li class="about__item">
+              <img class="about__item-decor josh-js" src="images/about/spiral.svg" alt="Спираль"
+                data-josh-anim-name="fadeInDown" data-josh-anim-delay="800">
+              <img class="about__item-img josh-js" src="images/about/player.svg" alt="Плеер"
+                data-josh-anim-name="fadeInDown" data-josh-anim-delay="500">
+              <p class="about__item-text josh-js" data-josh-anim-name="fadeInUp" data-josh-anim-delay="500">
                 Кастомные и предустановленные пресеты для нового звучания
               </p>
-            </div>
-            <div class="about__item">
-              <img data-wow-delay=".5s" class="about__item-decor wow animate__fadeInRight" src="images/about/spiral.svg"
-                alt="Спираль">
-              <img class="about__item-img wow animate__fadeInRight"
-                src="images/about/headphones.svg" alt="Наушники">
-              <p class="about__item-text wow animate__fadeInRight">
+            </li>
+            <li class="about__item">
+              <img class="about__item-decor josh-js" src="images/about/spiral.svg" alt="Спираль"
+                data-josh-anim-name="fadeInRight" data-josh-anim-delay="800">
+              <img class="about__item-img josh-js" src="images/about/headphones.svg" alt="Наушники"
+                data-josh-anim-name="fadeInRight" data-josh-anim-delay="500">
+              <p class="about__item-text josh-js" data-josh-anim-name="fadeInRight" data-josh-anim-delay="500">
                 Персонализация звука под ваш слух
               </p>
-            </div>
-          </div>
+            </li>
         </div>
+
       </section>
+
       <section class="users" id="users">
         <div class="container">
-          <h3 class="users__title title wow animate__fadeInRight">Наши пользователи</h3>
-          <img data-wow-delay=".5s" class="lazyload users__img wow animate__fadeInLeft" data-src="images/users/decor.png" alt="Девушка в наушниках">
+          <h2 class="users__title title josh-js" data-josh-anim-name="fadeInRight">Наши пользователи</h2>
+          <img class="lazyload users__img josh-js" data-src="images/users/decor.png" alt="Девушка в наушниках"
+            data-josh-anim-name="fadeInLeft" data-josh-anim-delay="500">
           <div class="users__content">
-            <p data-wow-delay=".3s" class="users__content-title wow animate__fadeInRight">Для меломанов</p>
-            <p data-wow-delay=".5s" class="users__content-text wow animate__fadeInRight">
+            <p class="users__subtitle josh-js" data-josh-anim-name="fadeInRight" data-josh-anim-delay="300">Для
+              меломанов
+            </p>
+            <p class="users__text josh-js" data-josh-anim-name="fadeInRight" data-josh-anim-delay="500">
               Эквалайзер, усилитель и персонализация звука для прослушивании музыки в новом, уникальном, звучании.
             </p>
           </div>
         </div>
       </section>
+
       <section class="functional" id="functional">
         <div class="container">
-          <h3 class="functional__title title wow animate__bounceInUp">Функционал приложения</h3>
-          <div class="functional__items">
-            <div class="functional__item">
-              <p class="functional__num wow animate__fadeInDown">1</p>
-              <p class="functional__text wow animate__fadeInUp">
+          <h2 class="functional__title title josh-js" data-josh-anim-name="bounceInUp">Функционал приложения</h2>
+          <ul class="functional__items">
+            <li class="functional__item">
+              <p class="functional__num josh-js" data-josh-anim-name="fadeInDown">1</p>
+              <p class="functional__text josh-js" data-josh-anim-name="fadeInUp">
                 Персонализация
                 и усиление звука
               </p>
-            </div>
-            <div class="functional__item">
-              <p class="functional__num wow animate__fadeInDown">2</p>
-              <p class="functional__text wow animate__fadeInUp">
+            </li>
+            <li class="functional__item">
+              <p class="functional__num josh-js" data-josh-anim-name="fadeInDown">2</p>
+              <p class="functional__text josh-js" data-josh-anim-name="fadeInUp">
                 Компрессия звука - усиление тихих звуков
               </p>
-            </div>
-            <div class="functional__item">
-              <p class="functional__num wow animate__fadeInDown">3</p>
-              <p class="functional__text wow animate__fadeInUp">
+            </li>
+            <li class="functional__item">
+              <p class="functional__num josh-js" data-josh-anim-name="fadeInDown">3</p>
+              <p class="functional__text josh-js" data-josh-anim-name="fadeInUp">
                 Встроенный тест слуха
               </p>
-            </div>
-            <div class="functional__item">
-              <p class="functional__num wow animate__fadeInDown">4</p>
-              <p class="functional__text wow animate__fadeInUp">
+            </li>
+            <li class="functional__item">
+              <p class="functional__num josh-js" data-josh-anim-name="fadeInDown">4</p>
+              <p class="functional__text josh-js" data-josh-anim-name="fadeInUp">
                 Шумоподавление
               </p>
-            </div>
-            <div class="functional__item">
-              <p class="functional__num wow animate__fadeInDown">5</p>
-              <p class="functional__text wow animate__fadeInUp">
+            </li>
+            <li class="functional__item">
+              <p class="functional__num josh-js" data-josh-anim-name="fadeInDown">5</p>
+              <p class="functional__text josh-js" data-josh-anim-name="fadeInUp">
                 Эквалайзер
                 для прослушивания музыки
               </p>
-            </div>
-            <div class="functional__item">
-              <p class="functional__num wow animate__fadeInDown">6</p>
-              <p class="functional__text wow animate__fadeInUp">
+            </li>
+            <li class="functional__item">
+              <p class="functional__num josh-js" data-josh-anim-name="fadeInDown">6</p>
+              <p class="functional__text josh-js" data-josh-anim-name="fadeInUp">
                 Преодоление окружающего шума
               </p>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
+
       <section class="rhythm" id="rhythm">
         <div class="container">
           <div class="rhythm__content">
-            <h3 class="rhythm__title title wow animate__fadeInLeft">Поддержка бинауральных ритмов</h3>
+            <h2 class="rhythm__title title josh-js" data-josh-anim-name="fadeInLeft">Поддержка бинауральных ритмов</h2>
             <ul class="rhythm__list">
-              <li data-wow-delay=".2s" class="rhythm__list-item rhythm__list-item--performance wow animate__fadeInLeft">Ритмы для продуктивности</li>
-              <li data-wow-delay=".4s" class="rhythm__list-item rhythm__list-item--fun wow animate__fadeInLeft">Ритмы для позитивного настроения</li>
-              <li data-wow-delay=".6s" class="rhythm__list-item rhythm__list-item--serenity wow animate__fadeInLeft">Ритмы для спокойствия</li>
+              <li class="rhythm__item rhythm__item--performance josh-js" data-josh-anim-name="fadeInLeft"
+                data-josh-anim-delay="200">
+                Ритмы для
+                продуктивности</li>
+              <li class="rhythm__item rhythm__item--fun josh-js" data-josh-anim-name="fadeInLeft"
+                data-josh-anim-delay="400">
+                Ритмы
+                для позитивного настроения</li>
+              <li class="rhythm__item rhythm__item--serenity josh-js" data-josh-anim-name="fadeInLeft"
+                data-josh-anim-delay="600">
+                Ритмы для спокойствия</li>
             </ul>
           </div>
         </div>
-        <img data-wow-delay=".8s" class="lazyload rhythm__img wow animate__fadeInRight" data-src="images/rhythm/decor.png" alt="Наушники">
+        <img class="lazyload rhythm__img josh-js" data-src="images/rhythm/decor.png" alt="Наушники"
+          data-josh-anim-name="fadeInRight" data-josh-anim-delay="800">
       </section>
+
       <section class="quality" id="quality">
         <div class="container">
-          <h3 class="quality__title title wow animate__bounceInUp">Улучшите качество звучания музыки</h3>
-          <div class="quality__items">
-            <div data-wow-delay=".2s" class="quality__item wow animate__fadeInLeft">
+          <h2 class="quality__title title josh-js" data-josh-anim-name="bounceInUp">Улучшите качество звучания музыки
+          </h2>
+          <ul class="quality__items">
+            <li class="quality__item josh-js" data-josh-anim-name="fadeInLeft" data-josh-anim-delay="200">
               С помощью эквалайзера
-            </div>
-            <div data-wow-delay=".2s" class="quality__item wow animate__fadeInRight">
+            </li>
+            <li class="quality__item josh-js" data-josh-anim-name="fadeInRight" data-josh-anim-delay="200">
               С усилением Volume Boost
-            </div>
-            <div data-wow-delay=".6s" class="quality__item wow animate__fadeInLeft">
+            </li>
+            <li class="quality__item josh-js" data-josh-anim-name="fadeInLeft" data-josh-anim-delay="600">
               С адаптацией музыки
               <span>под ваш слуховой профиль</span>
-            </div>
-            <div data-wow-delay=".6s" class="quality__item wow animate__fadeInRight">
+            </li>
+            <li class="quality__item josh-js" data-josh-anim-name="fadeInRight" data-josh-anim-delay="600">
               С подавлением
               <span>посторонних шумов</span>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
+
       <section class="easy" id="easy">
         <div class="container">
           <div class="easy__content">
-            <h2 class="easy__title wow animate__fadeInLeft">Easy To Hear</h2>
-            <h4 data-wow-delay=".3s" class="easy__subtitle wow animate__fadeInLeft">Раскроет звучание музыки по-новому</h4>
-            <a data-wow-delay=".6s" class="easy__link wow animate__rollIn" href="#">Попробовать</a>
+            <h2 class="easy__title josh-js" data-josh-anim-name="fadeInLeft">Easy To Hear</h2>
+            <p class="easy__subtitle josh-js" data-josh-anim-name="fadeInLeft" data-josh-anim-delay="300">Раскроет
+              звучание
+              музыки по-новому
+            </p>
+            <a class="easy__link josh-js" href="#" data-josh-anim-name="rollIn"
+              data-josh-anim-delay="600">Попробовать</a>
           </div>
         </div>
-        <img data-wow-delay="1s" class="lazyload easy__img wow animate__fadeInRight" data-src="images/easy/decor.png" alt="Девушка в наушниках">
+        <img class="lazyload easy__img josh-js" data-src="images/easy/decor.png" alt="Девушка в наушниках"
+          data-josh-anim-name="fadeInRight" data-josh-anim-delay="1000">
       </section>
+
     </main>
+
     <footer class="footer">
       <div class="container">
         <ul class="footer__list">
-          <li data-wow-delay=".5s" class="footer__list-item wow animate__fadeInLeft">
-            <a class="footer__list-link" href="#">Условия использования</a>
+          <li class="footer__item josh-js" data-josh-anim-name="fadeInLeft" data-josh-anim-delay="500">
+            <a class="footer__link" href="#">Условия использования</a>
           </li>
-          <li data-wow-delay=".5s" class="footer__list-item wow animate__fadeInLeft">
-            <a class="footer__list-link" href="#">Политика конфиденциальности</a>
+          <li class="footer__item josh-js" data-josh-anim-name="fadeInLeft" data-josh-anim-delay="500">
+            <a class="footer__link" href="#">Политика конфиденциальности</a>
           </li>
-          <li data-wow-delay=".5s" class="footer__list-item wow animate__fadeInRight">
-            <a class="footer__list-link" href="#">Ограничение ответственности</a>
+          <li class="footer__item josh-js" data-josh-anim-name="fadeInRight" data-josh-anim-delay="500">
+            <a class="footer__link" href="#">Ограничение ответственности</a>
           </li>
-          <li data-wow-delay=".5s" class="footer__list-item wow animate__fadeInRight">
-            <a class="footer__list-link" href="#">Активация программы</a>
+          <li class="footer__item josh-js" data-josh-anim-name="fadeInRight" data-josh-anim-delay="500">
+            <a class="footer__link" href="#">Активация программы</a>
           </li>
         </ul>
-        <a data-wow-delay=".5s" class="footer__email wow animate__jackInTheBox" href="mailto:support@easy2hear.com">Свяжитесь с нами: support@easy2hear.com</a>
+        <a class="footer__email josh-js" href="mailto:support@easy2hear.com" data-josh-anim-name="jackInTheBox"
+          data-josh-anim-delay="700">Свяжитесь с нами: support@easy2hear.com</a>
       </div>
     </footer>
+
   </div>
 
-
-
   <script src="js/main.min.js"></script>
+
 </body>
 
 </html>

@@ -1,0 +1,141 @@
+.header {
+  padding-top: 70px;
+  background-color: #F9FBFB;
+  position: relative;
+
+  @media (max-width: 1200px) {
+    // any code;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 168px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #EBF0F2 100%);
+    bottom: 0;
+  }
+
+  &__btn-wrap {
+    display: none;
+  }
+
+  &__click-counter {
+    display: none;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 863px;
+    max-height: 900px;
+    object-fit: cover;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+    height: 642px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title {
+    font-size: 60px;
+    line-height: 66px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    @extend %forum-400;
+    margin-top: auto;
+  }
+
+  &__subtitle {
+    @extend %montserrat-400;
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 40px;
+  }
+
+  &__link {
+    background-color: $main;
+    box-shadow: 0px 0px 10px 5px rgba(191, 63, 110, 0.2);
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+    margin-bottom: auto;
+    width: 180px;
+    padding: 14px 0;
+    text-align: center;
+    display: block;
+  }
+}
+
+.menu {
+  position: fixed;
+  left: 0;
+  top: 25px;
+  z-index: 3;
+  height: 250px;
+  padding: 25px 0;
+  transition: all .5s;
+
+  &.menu--scroll {
+    height: 70px;
+    top: 0;
+    background-color: $main;
+
+    .menu__link {
+      color: #fff;
+    }
+  }
+
+  &.menu--out {
+    transition: transform 0.5s 0.5s;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    font-size: 17px;
+    margin-right: 50px;
+    color: $main;
+    animation-duration: 1s;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__item--fil {
+    animation-name: fadeInLeft;
+  }
+
+  &__item--fol {
+    animation-name: fadeOutLeft;
+  }
+
+  &__item--ri {
+    animation-name: rollInLeft;
+    animation-duration: 1.5s;
+  }
+
+  &__item--ro {
+    animation-name: rollOutRight;
+    animation-duration: 1.5s;
+  }
+
+  &__item--fir {
+    animation-name: fadeInRight;
+  }
+
+  &__item--for {
+    animation-name: fadeOutRight;
+  }
+}

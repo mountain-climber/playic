@@ -1,49 +1,44 @@
-@font-face{
-  font-family: 'Forum-Regular';
+@font-face {
+  font-family: 'Forum';
   font-weight: 400;
   font-style: normal;
-  src: local('Forum-Regular'),
-       url('../fonts/Forum-Regular.woff2') format('woff2'),
-       url('../fonts/Forum-Regular.woff') format('woff');
+  src: url('../fonts/Forum-Regular.woff2') format('woff2'),
+    url('../fonts/Forum-Regular.woff') format('woff');
   font-display: swap;
 }
 
-@font-face{
-  font-family: 'Montserrat-Regular';
+@font-face {
+  font-family: 'Montserrat';
   font-weight: 400;
   font-style: normal;
-  src: local('Montserrat-Regular'),
-       url('../fonts/Montserrat-Regular.woff2') format('woff2'),
-       url('../fonts/Montserrat-Regular.woff') format('woff');
+  src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+    url('../fonts/Montserrat-Regular.woff') format('woff');
   font-display: swap;
 }
 
-@font-face{
-  font-family: 'Montserrat-Medium';
+@font-face {
+  font-family: 'Montserrat';
   font-weight: 500;
   font-style: normal;
-  src: local('Montserrat-Medium'),
-       url('../fonts/Montserrat-Medium.woff2') format('woff2'),
-       url('../fonts/Montserrat-Medium.woff') format('woff');
+  src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+    url('../fonts/Montserrat-Medium.woff') format('woff');
   font-display: swap;
 }
 
-@font-face{
-  font-family: 'Raleway-Medium';
+@font-face {
+  font-family: 'Raleway';
   font-weight: 500;
   font-style: normal;
-  src: local('Raleway-Medium'),
-       url('../fonts/Raleway-Medium.woff2') format('woff2'),
-       url('../fonts/Raleway-Medium.woff') format('woff');
+  src: url('../fonts/Raleway-Medium.woff2') format('woff2'),
+    url('../fonts/Raleway-Medium.woff') format('woff');
   font-display: swap;
 }
 
-@font-face{
-  font-family: 'Raleway-SemiBold';
+@font-face {
+  font-family: 'Raleway';
   font-weight: 600;
   font-style: normal;
-  src: local('Raleway-SemiBold'),
-       url('../fonts/Raleway-SemiBold.woff2') format('woff2'),
-       url('../fonts/Raleway-SemiBoldm.woff') format('woff');
+  src: url('../fonts/Raleway-SemiBold.woff2') format('woff2'),
+    url('../fonts/Raleway-SemiBoldm.woff') format('woff');
   font-display: swap;
 }

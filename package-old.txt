@@ -1,2 +1,0 @@
-    "gulp-imagemin": "^7.1.0",
-    "imagemin-pngquant": "^9.0.2",

@@ -1,44 +1,76 @@
-html{
+html {
   box-sizing: border-box;
 }
 
-*, *::after, *::before{
+*,
+*::after,
+*::before {
   box-sizing: inherit;
 }
 
-ul[class], ol[class]{
+ul,
+ol {
   padding: 0;
-}
-
-body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd{
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6{
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font: inherit;
 }
 
-ul[class]{
+ul[class] {
   list-style: none;
 }
 
-img{
+img {
   max-width: 100%;
   display: block;
 }
 
-input, button, textarea, select{
+input,
+button,
+textarea,
+select {
   font: inherit;
   color: inherit;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  display: inline-block;
+  appearance: none;
 }
 
-a{
+textarea {
+  resize: vertical;
+}
+
+a {
   text-decoration: none;
   color: inherit;
-  font: inherit;
-  display: inline-block;
 }
 
-button{
+button {
   cursor: pointer;
 }
