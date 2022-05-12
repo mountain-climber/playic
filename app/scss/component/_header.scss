@@ -1,7 +1,10 @@
 .header {
   padding-top: 70px;
-  background-color: #F9FBFB;
+  background-color: #EBF0F2;
   position: relative;
+  background-image: url('../images/header/header-bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
 
   @media (max-width: 1200px) {
     // any code;

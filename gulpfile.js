@@ -43,7 +43,7 @@ function images() {
 function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
-    'lazyestload/dist/js/lazyload.js',
+    'node_modules/lazyestload/dist/js/lazyload.js',
     'node_modules/joshjs/src/josh.js',
     'app/js/main.js'
   ])

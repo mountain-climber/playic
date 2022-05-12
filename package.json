@@ -19,6 +19,7 @@
     "gulp-uglify-es": "^2.0.0",
     "imagemin-pngquant": "^9.0.2",
     "joshjs": "^1.0.8",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "lazyestload": "^1.1.0"
   }
 }
